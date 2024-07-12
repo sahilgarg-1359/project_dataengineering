@@ -1,0 +1,22 @@
+{
+	"name": "ds_populationbyage_gen2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_populatiobyage_gen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "datapopulatiobyagegen2"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
