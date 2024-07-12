@@ -1,0 +1,9 @@
+{
+	"name": "adls-projectdp203",
+	"location": "norwayeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e4d17d81-faa6-4af6-bfcd-a45b7038d673",
+		"tenantId": "404b1967-6507-45ab-8a6d-7374a3f478be"
+	}
+}
