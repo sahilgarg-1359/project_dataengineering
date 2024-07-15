@@ -35,9 +35,20 @@
 			{
 				"name": "If Condition1",
 				"type": "IfCondition",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Get Metadata SourceData",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@equals(activity('Get Metadata SourceData').output.columnCount,13)",
+						"type": "Expression"
+					},
 					"ifTrueActivities": [
 						{
 							"name": "Copy population age data",
@@ -99,6 +110,20 @@
 							]
 						}
 					]
+				}
+			},
+			{
+				"name": "if file exist",
+				"type": "Validation",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_populationbyage_tsv_gz",
+						"type": "DatasetReference"
+					},
+					"timeout": "1.00:00:00",
+					"sleep": 600
 				}
 			}
 		],
