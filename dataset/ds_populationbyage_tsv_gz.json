@@ -13,7 +13,7 @@
 				"fileName": "population_by_age.tsv.gz",
 				"container": "datapopulationbyage"
 			},
-			"columnDelimiter": ",",
+			"columnDelimiter": "\t",
 			"compressionCodec": "gzip",
 			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
