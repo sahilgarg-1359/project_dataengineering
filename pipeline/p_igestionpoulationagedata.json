@@ -30,17 +30,12 @@
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings",
-							"copyBehavior": "FlattenHierarchy",
-							"metadata": [
-								{
-									"value": ""
-								}
-							]
+							"copyBehavior": "FlattenHierarchy"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".tsv"
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
