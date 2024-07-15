@@ -6,7 +6,14 @@
 				"name": "Get Metadata SourceData",
 				"description": "Get Metadata of populatiobyage source data",
 				"type": "GetMetadata",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "if file exist",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.20:00:00",
 					"retry": 0,
