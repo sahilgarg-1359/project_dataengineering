@@ -19,6 +19,10 @@
 			"type": "string",
 			"defaultValue": "https://projectstoragedlgen2.dfs.core.windows.net/"
 		},
+		"tr_deleteSourceFile_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/57f2810f-ad2b-4589-ae35-d733aba0a4c5/resourceGroups/DataEngineeringDp-203/providers/Microsoft.Storage/storageAccounts/projectstoragedlgen2"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,6 +58,9 @@
 					},
 					"ls_populatiobyage_gen2_properties_typeProperties_url": {
 						"value": "[parameters('ls_populatiobyage_gen2_properties_typeProperties_url')]"
+					},
+					"tr_deleteSourceFile_properties_typeProperties_scope": {
+						"value": "[parameters('tr_deleteSourceFile_properties_typeProperties_scope')]"
 					}
 				}
 			},
