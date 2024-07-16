@@ -1,0 +1,25 @@
+{
+	"name": "tr_deleteSourceFile",
+	"properties": {
+		"description": "delete source file if Filed has copied in datalakeStorageg",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "p_igestionpoulationagedata",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/datapopulatiobyagegen2/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/57f2810f-ad2b-4589-ae35-d733aba0a4c5/resourceGroups/DataEngineeringDp-203/providers/Microsoft.Storage/storageAccounts/projectstoragedlgen2",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
