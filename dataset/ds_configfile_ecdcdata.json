@@ -5,6 +5,17 @@
 			"referenceName": "ls_ecdc_config",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"BaseUrl": {
+				"type": "string"
+			},
+			"RelativeUrl": {
+				"type": "string"
+			},
+			"DestinationFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
