@@ -1,0 +1,39 @@
+{
+	"name": "ds_ecdcalldata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ecdcdatahttp",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"SourceBaseUrl": {
+					"value": "@dataset().SourceBaseUrl",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"SourceBaseUrl": {
+				"type": "string"
+			},
+			"SourceRelativeUrl": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().SourceRelativeUrl",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
