@@ -11,6 +11,9 @@
 		"ls_populatiobyage_gen2_accountKey": {
 			"value": ""
 		},
+		"ls_ecdcdatahttp_properties_typeProperties_url": {
+			"value": "@{linkedService().SourceBaseUrl}"
+		},
 		"ls_populatiobyage_gen2_properties_typeProperties_url": {
 			"value": "https://projectstoragedlgen2.dfs.core.windows.net/"
 		},
